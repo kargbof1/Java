@@ -6,17 +6,19 @@ class BubbleSort {
         Random rand = new Random();
         //create list of numbers and create memory
         int[] numbers = new int[10];
+       
         //create the list of random numbers and iterate through the list of numbers 
         for(int i=0; i < numbers.length;i++){
             numbers[i]=rand.nextInt(100); //create 10 randoms from 0 to 100
-            System.out.println(numbers[i]);
+            
+            System.out.println( numbers[i]);
        
         }
                
         //Bubble sort algorithm
         boolean swappedSomething = true;
         while(swappedSomething){
-            swappedSomething=false;
+            swappedSomething=false; //if you didnt have to swap something then stop
         for (int i = 0; i<numbers.length-1;i++)
         {
             if(numbers[i]>numbers[i+1])
@@ -25,10 +27,17 @@ class BubbleSort {
                 int temp = numbers[i];
                 numbers[i] = numbers[i+1];
                 numbers[i+1]=temp;
-
             }
+            
         }
+       
+        
     }
+    System.out.println( "sorted list");
+    for(int j = 0; j < numbers.length; j++){
+        
+        System.out.println(numbers[j]);
+      }
 
     }
     
