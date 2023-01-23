@@ -20,3 +20,6 @@ public class HackerRankSolution
         System.out.println("Int: " + i);
     }
 }
+
+//TO DO:
+//pass int and double with an if statement 
